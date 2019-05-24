@@ -1,33 +1,288 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  */
+/* Project Styling Begins Here */
+/*  */
+
 .App {
-  text-align: center;
+  width: 1280px;
+  margin: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  color: white;
+  width: 100%;
+  min-height: 600px;
+  background-image: url('./Images/atxbw.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-elements {
+  display: flex;
+}
+
+.banner h1 {
+  font-size: 3em;
+}
+
+.rw-wrapper{
+  width: 80%;
+	position: relative;
+	margin: 110px auto 0 auto;
+  padding: 10px;
+}
+
+.rw-sentence{
+  margin: 0;
+  text-align: left;
+}
+
+.rw-sentence span{
+	color: whitesmoke;
+	white-space: nowrap;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: whitesmoke;
+}
+
+.rw-words-2 span{
+	animation: rotateWordsSecond 14s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+	animation-delay: 2s; 
+	color: whitesmoke;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 4s; 
+	color: whitesmoke;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 6s; 
+	color: whitesmoke;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 8s; 
+	color: whitesmoke;
+}
+.rw-words span:nth-child(6) {  
+	animation-delay: 10s; 
+	color: whitesmoke;
+}
+.rw-words span:nth-child(7) {  
+	animation-delay: 12s; 
+	color: whitesmoke;
+}
+.rw-words span:nth-child(8) {  
+	animation-delay: 14s; 
+	color: whitesmoke;
+}
+
+@keyframes rotateWordsSecond {
+  0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+  10% { opacity: 0.3; width: 0px; }
+  20% { opacity: 1; width: 100%; }
+  27% { opacity: 0; width: 100%; }
+  100% { opacity: 0; }
+}
+
+.austin-from-austin {
+  margin-top: 30px;
+  margin-left: 140px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+}
+
+.problem-solving {
+  margin-top: 375px;
+  font-size: 1em;
+}
+
+.i-am-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: #bb1333;
+}
+
+.i-am-section-title {
+  padding-top: 1em;
+  font-size: 3em;
+}
+
+.i-am-choices {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.i-am-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25%;
+  padding-top: 1em;
+  border-radius: .5em;
+  box-shadow: 5px 5px 15px 5px #a7112d;
+}
+
+.i-am-a:hover {
+  text-shadow: 1px 1px #1d2326;
+  box-shadow: 1px 1px #1d2326;
+}
+
+.i-am-a h2 {
+  font-size: 1.8em;
+}
+
+.i-am-a p {
+  font-size: 1.05em;
+}
+
+.i-am-line {
+  border: 1px solid black;
+}
+
+.footer {
+  background-color: #1d2326;
+  height: 18em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 5em 10em;
+}
+
+.footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer nav a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer img {
+  width: 15em;
+  padding-top: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.work-card-array {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #22292c;
+  color: rgb(194, 194, 194);;
+}
+
+.work-card {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #181f2c;
+  padding: 10px 10px;
+  margin: 3%;
+  /* border: 1px solid white; */
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px 5px rgb(24, 24, 24);
+}
+
+.work-card h3 {
+  font-size: 1.75em;
+  color: rgb(194, 194, 194);
+  text-align: center;
+}
+
+.work-card img {
+  margin: 5px 0px;
+}
+
+.work-card-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%
+}
+
+.work-card a {
+  padding-top: 5px;
+  text-decoration: none;
+  color: rgb(194, 194, 194);
+  width: 50%;
+}
+
+.work-card p {
+  margin-top: 5px;
 }
