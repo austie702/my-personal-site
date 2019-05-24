@@ -60,17 +60,38 @@ const devWork = [
 const artWork = [
   {
     id: 'a0',
-    title: 'Stone Wall',
-    desc: 'This was a project aiming for photorealism requiring minimal modeling time.',
-    url: 'www.vimeo.com/something-or-other',
+    title: 'Demo Reel',
+    desc: 'This is a highlight reel of my work ranging from traditional to scan-data modeling.',
+    url: 'https://vimeo.com/154961183',
     techStack: ['Modo', 'PhotoScan', 'Sony a99']
   },
   {
     id: 'a1',
     title: 'AR15',
-    desc: 'This was a project sought to model complex hard surface geometry without faking any of the modeling detail.',
-    url: 'www.vimeo.com/something-or-other',
+    desc: 'This project sought to model complex hard surface geometry without faking any of the modeling detail with textures.',
+    url: 'https://vimeo.com/97918154',
     techStack: ['Modo']
+  },
+  {
+    id: 'a2',
+    title: 'Stone Wall',
+    desc: 'This was a project aiming for photorealism requiring minimal modeling time.',
+    url: 'https://vimeo.com/135458192',
+    techStack: ['Modo', 'PhotoScan', 'Sony a99']
+  },
+  {
+    id: 'a2',
+    title: 'Brick Pillar Corner',
+    desc: 'Photogrammetry project to capture granular details in seemingly flat surfaces.',
+    url: 'https://vimeo.com/124166261',
+    techStack: ['Modo', 'PhotoScan', 'Sony a99']
+  },
+  {
+    id: 'a2',
+    title: 'Manhole Cover',
+    desc: 'Photogrammetry asset designed for realistic road/sidewalk texture library.',
+    url: 'https://vimeo.com/116153733',
+    techStack: ['Modo', 'PhotoScan', 'Sony a99']
   }
 ]
 
