@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import LogoReact from '../../Images/Logo_React.png';
+import LogoJavaScript from '../../Images/Logo_JavaScript.png';
+
+const path={
+  JS: LogoJavaScript,
+  React: LogoReact
+}
 
 class WorkCard extends Component {
   render() {
@@ -9,7 +16,9 @@ class WorkCard extends Component {
         <p>{this.props.desc}</p>
         <div className="work-card-bottom">
           <a href={this.props.url}>Visit Site</a>
-          <p className="tech-stack">{this.props.techStack}</p>
+          {this.props.techStack.map(tech => (
+            <img src={path[tech]} />
+          ))}
         </div>
       </div>
     )

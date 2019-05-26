@@ -57,14 +57,16 @@ table {
 /*  */
 
 .App {
-  width: 1280px;
-  margin: auto;
+  /* width: 1280px; */
+  /* margin: 0% 20%; */
+  /* padding: 0% 25%; */
 }
 
 .banner {
   color: white;
   width: 100%;
-  min-height: 600px;
+  min-height: 800px;
+  padding: 0% 15%;
   background-image: url('./Images/atxbw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,13 +77,14 @@ table {
 }
 
 .banner h1 {
+  padding-top: 30%;
   font-size: 3em;
 }
 
 .rw-wrapper{
   width: 80%;
 	position: relative;
-	margin: 110px auto 0 auto;
+	margin: 30% auto 0 auto;
   padding: 10px;
 }
 
@@ -168,6 +171,7 @@ table {
 .i-am-section {
   display: flex;
   flex-direction: column;
+  padding: 0% 20%;
   color: white;
   text-align: center;
   background-color: #bb1333;
@@ -217,7 +221,7 @@ table {
   height: 18em;
   justify-content: center;
   text-align: center;
-  padding: 5em 10em;
+  padding: 5% 20%;
 }
 
 .footer nav {
@@ -240,6 +244,7 @@ table {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #22292c;
+  padding: 0% 10%;
   color: rgb(194, 194, 194);;
 }
 

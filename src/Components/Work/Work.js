@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import WorkCard from '../WorkCard/WorkCard.js';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import logoReact from '../../Images/Logo_React.png';
-
-// const logos = {
-//   'JS': require('../../Images/Logo_JavaScript.png'),
-//   'React': require('../../Images/Logo_React.png')
-// }
 
 const devWork = [
   {
     id: 'd0',
+    type: 'dev',
     title: 'The Bible in Five',
     desc: 'The Bible In Five is a scaleable way to read the Bible in context at all times. This app seeks to do away with the lack of understanding in the church.',
     url: 'www.BibleInFive.com',
@@ -18,6 +12,7 @@ const devWork = [
   },
   {
     id: 'd1',
+    type: 'dev',
     title: 'Beerthoven',
     desc: 'Beerthoven Concert Series is a nonprofit classical music concert series for all ages. Dress how you want, clap when you want, and come enjoy a beer, on us!',
     url: 'www.Beerthoven.com',
@@ -25,6 +20,7 @@ const devWork = [
   },
   {
     id: 'd2',
+    type: 'dev',
     title: 'Craft Music Lessons',
     desc: 'Craft is an adult group piano class held in laid back environments like breweries, bars, & coffee shops.',
     url: 'www.CraftMusicLessons.com',
@@ -32,6 +28,7 @@ const devWork = [
   },
   {
     id: 'd3',
+    type: 'dev',
     title: 'TuneKit',
     desc: 'TuneKit is a platform to empower people to create venues in their own homes.',
     url: 'www.TuneKit.com',
@@ -39,6 +36,7 @@ const devWork = [
   },
   {
     id: 'd4',
+    type: 'dev',
     title: 'Beerthoven Data App',
     desc: 'This app is a living document for all things Beerthoven concert data. Designed for the staff to access all data in a single customized dashboard.',
     url: 'www.Beerthoven.com/datadash',
@@ -46,6 +44,7 @@ const devWork = [
   },
   {
     id: 'd5',
+    type: 'dev',
     title: 'My Personal Website',
     desc: "Well, you're already here, but I may as well add it to the list. Go ahead and click on it! You should head over there/here and take a look.",
     url: 'www.AustinHowes.com',
@@ -53,13 +52,10 @@ const devWork = [
   }
 ]
 
-{/* <FontAwesomeIcon icon={['fab', 'node-js']} /> */}
-{/* <FontAwesomeIcon icon={['fab', 'python']} /> */}
-{/* <FontAwesomeIcon icon={['fab', 'react']} /> */}
-
 const artWork = [
   {
     id: 'a0',
+    type: 'art',
     title: 'Demo Reel',
     desc: 'This is a highlight reel of my work ranging from traditional to scan-data modeling.',
     url: 'https://vimeo.com/154961183',
@@ -67,6 +63,7 @@ const artWork = [
   },
   {
     id: 'a1',
+    type: 'art',
     title: 'AR15',
     desc: 'This project sought to model complex hard surface geometry without faking any of the modeling detail with textures.',
     url: 'https://vimeo.com/97918154',
@@ -74,20 +71,23 @@ const artWork = [
   },
   {
     id: 'a2',
+    type: 'art',
     title: 'Stone Wall',
     desc: 'This was a project aiming for photorealism requiring minimal modeling time.',
     url: 'https://vimeo.com/135458192',
     techStack: ['Modo', 'PhotoScan', 'Sony a99']
   },
   {
-    id: 'a2',
+    id: 'a3',
+    type: 'art',
     title: 'Brick Pillar Corner',
     desc: 'Photogrammetry project to capture granular details in seemingly flat surfaces.',
     url: 'https://vimeo.com/124166261',
     techStack: ['Modo', 'PhotoScan', 'Sony a99']
   },
   {
-    id: 'a2',
+    id: 'a4',
+    type: 'art',
     title: 'Manhole Cover',
     desc: 'Photogrammetry asset designed for realistic road/sidewalk texture library.',
     url: 'https://vimeo.com/116153733',
@@ -96,11 +96,15 @@ const artWork = [
 ]
 
 class Work extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>
-        
-        <section className='work-card-array'>
+
+        {this.props.showDev && <section className='work-card-array'>
           {devWork.map((piece) => {
             return <WorkCard 
               key={piece.id} 
@@ -110,10 +114,10 @@ class Work extends Component {
               techStack={piece.techStack} 
             />
         })}
-        </section>
+        </section>}
 
 
-        <section className='work-card-array'>
+        {this.props.showArt && <section className='work-card-array'>
           {artWork.map((piece) => {
             return <WorkCard 
               key={piece.id} 
@@ -123,7 +127,7 @@ class Work extends Component {
               techStack={piece.techStack} 
             />
         })}
-        </section>
+        </section>}
 
       </div>
     )

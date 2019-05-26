@@ -1,25 +1,17 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+import Home from './Pages/Home.js';
+import Resume from './Pages/Resume.js';
+import About from './Pages/About.js';
+import Contact from './Pages/Contact.js';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-
-import Banner from './Components/Banner/Banner.js';
-import IAM from './Components/IAM/IAM.js';
-import Work from './Components/Work/Work.js';
-import Footer from './Components/Footer/Footer.js';
-import './App.css';
-
-library.add(fab)
-
-function App() {
-  return (
-    <div className="App">
-      <Banner />
-      <IAM />
-      <Work />
-      <Footer />
-    </div>
-  );
-}
+const App = () => (
+  <div className='app'>
+    <Route exact path='/' component={Home} />
+    <Route path='/resume' component={Resume} />
+    <Route path='/about' component={About} />
+    <Route path='/contact' component={Contact} />
+  </div>
+);
 
 export default App;
