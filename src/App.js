@@ -4,6 +4,7 @@ import Home from './Pages/Home.js';
 import Resume from './Pages/Resume.js';
 import About from './Pages/About.js';
 import Contact from './Pages/Contact.js';
+import BibleInFive from './Pages/BibleInFive';
 
 const App = () => (
   <div className='app'>
@@ -11,6 +12,7 @@ const App = () => (
     <Route path='/resume' component={Resume} />
     <Route path='/about' component={About} />
     <Route path='/contact' component={Contact} />
+    <Route path='/portfolio/BibleInFive' component={BibleInFive} />
   </div>
 );
 

@@ -57,16 +57,15 @@ table {
 /*  */
 
 .App {
-  /* width: 1280px; */
-  /* margin: 0% 20%; */
-  /* padding: 0% 25%; */
+  width: 100%;
 }
 
 .banner {
   color: white;
   width: 100%;
-  min-height: 800px;
-  padding: 0% 15%;
+  min-height: 600px;
+  max-height: 700px;
+  padding: 5% 15%;
   background-image: url('./Images/atxbw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,18 +73,32 @@ table {
 
 .header-elements {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 500px;
 }
 
-.banner h1 {
-  padding-top: 30%;
-  font-size: 3em;
+.austin-from-austin {
+  /* margin-left: 10%; */
+  font-size: 4em;
+}
+
+/* .profile-pic {
+  width: 100px;
+  height: 100px;
+} */
+
+.problem-solving {
+  /* margin-top: 20%; */
+  font-size: 1em;
 }
 
 .rw-wrapper{
-  width: 80%;
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
 	position: relative;
-	margin: 30% auto 0 auto;
-  padding: 10px;
 }
 
 .rw-sentence{
@@ -153,20 +166,6 @@ table {
   100% { opacity: 0; }
 }
 
-.austin-from-austin {
-  margin-top: 30px;
-  margin-left: 140px;
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-}
-
-.problem-solving {
-  margin-top: 375px;
-  font-size: 1em;
-}
 
 .i-am-section {
   display: flex;
@@ -193,8 +192,8 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 25%;
-  padding-top: 1em;
+  width: 35%;
+  padding: 1em;
   border-radius: .5em;
   box-shadow: 5px 5px 15px 5px #a7112d;
 }
@@ -255,41 +254,53 @@ table {
   background-color: #181f2c;
   padding: 10px 10px;
   margin: 3%;
-  /* border: 1px solid white; */
   box-sizing: border-box;
   box-shadow: 5px 5px 15px 5px rgb(24, 24, 24);
 }
 
-.work-card h3 {
+.work-card .title {
   font-size: 1.75em;
   color: rgb(194, 194, 194);
   text-align: center;
 }
 
-.work-card img {
+.work-card .thumbnail {
   margin: 5px 0px;
+}
+
+.work-card-desc {
+  font-size: 125%;
+  line-height: 1.2;
+  margin-top: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .work-card-bottom {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: bottom;
+  padding-top: 5%;
+  margin-top: auto;
+}
+
+.work-card a {
+  color: rgb(194, 194, 194);
+  font-size: 110%;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tech-stack {
   display: flex;
-  flex-direction: row-reverse;
-  width: 50%
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.work-card a {
-  padding-top: 5px;
-  text-decoration: none;
-  color: rgb(194, 194, 194);
-  width: 50%;
-}
-
-.work-card p {
-  margin-top: 5px;
+.techstack-logo {
+  margin-left: 2%;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 /* Resume Page */
@@ -298,7 +309,7 @@ table {
   display: flex;
   margin: 2%;
   /* flex-wrap: wrap; */
-  max-width: 1200;
+  /* max-width: 600; */
   /* height: 1200; */
 }
 
@@ -321,31 +332,41 @@ table {
 }
 
 .summary-p {
-  font-size: 125%;
+  font-size: 140%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
 }
 
 .icon-link {
   display: flex;
-  padding: 1.5%;
+  align-items: center;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.icon {
+  width: 9%;
+}
+
+.icon-link a {
+  color: black;
+  text-decoration: none;
 }
 
 .contact-info {
-  padding-left: 2%;
-  font-size: 110%;
+  font-size: 140%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 95%;
 }
 
 .right-panel {
   background: whitesmoke;
   padding: 3%;
   width: 76%;
-  /* height: 1200px; */
 }
 
 .right-panel .project-or-company-title {
-  font-size: 150%;
+  font-size: 200%;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -363,19 +384,18 @@ table {
 .skills-list p {
   font-size: 140%;
   padding-top: 3%;
-  padding-left: 3%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .left-panel h4b {
-  font-size: 130%;
+  font-size: 150%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
 
 .right-panel h3b {
   color: #008fff;
-  font-size: 160%;
+  font-size: 180%;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -396,11 +416,13 @@ table {
 .title-date {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .company-date {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .date {
@@ -419,6 +441,7 @@ table {
   line-height: 1.2;
   width: 85%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 2%;
 }
 
 .location {
@@ -468,6 +491,10 @@ hr.thick {
 
 .experience {
   padding: 0.5em 0%;
+}
+
+.schools .school-year {
+  color: darkgray;
 }
 
 /* Fonts */
