@@ -1,10 +1,13 @@
 import React from 'react';
 import Footer from '../Components/Footer/Footer.js';
+import BannerSmall from '../Components/BannerSmall/BannerSmall.js';
+import AboutMeComponent from '../Components/AboutMeComponent/AboutMeComponent.js';
 
 const About = () => {
   return (
     <div>
-      <h1>About Page</h1>
+      <BannerSmall />
+      <AboutMeComponent />
       <Footer />
     </div>
   )

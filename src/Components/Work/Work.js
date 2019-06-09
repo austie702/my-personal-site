@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkCard from '../WorkCard/WorkCard.js';
+import DevThumb_TBIF from '../../Images/DevThumbnails/DevThumb_BibleInFive.jpg';
 
 const devWork = [
   {
@@ -9,7 +10,8 @@ const devWork = [
     desc: 'The Bible In Five is a scaleable way to read the Bible in context at all times. This app seeks to do away with the lack of understanding in the church.',
     url: 'www.BibleInFive.com',
     path: 'BibleInFive',
-    techStack: ['React', 'Node', 'Go']
+    techStack: ['React', 'Node', 'Go'],
+    imageThumb: DevThumb_TBIF
   },
   {
     id: 'd1',
@@ -119,10 +121,10 @@ const Work = (props) => {
             url={piece.url}
             path={piece.path} 
             techStack={piece.techStack} 
+            imageThumb={piece.imageThumb}
           />
       })}
       </section>}
-
 
       {props.showArt && <section className='work-card-array'>
         {artWork.map((piece) => {
@@ -133,6 +135,7 @@ const Work = (props) => {
             url={piece.url} 
             path={piece.path}
             techStack={piece.techStack} 
+            imageThumb={piece.imageThumb}
           />
       })}
       </section>}

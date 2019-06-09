@@ -71,6 +71,17 @@ table {
   background-size: cover;
 }
 
+.banner-small {
+  color: white;
+  width: 100%;
+  min-height: 500px;
+  /* max-height: 700px; */
+  padding: 5% 15%;
+  background-image: url('./Images/atxbwSmall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header-elements {
   display: flex;
   flex-direction: column;
@@ -80,8 +91,12 @@ table {
 }
 
 .austin-from-austin {
-  /* margin-left: 10%; */
   font-size: 4em;
+}
+
+.austin-from-austin a {
+  color: white;
+  text-decoration: none;
 }
 
 /* .profile-pic {
@@ -217,7 +232,7 @@ table {
 
 .footer {
   background-color: #1d2326;
-  height: 18em;
+  height: 200%;
   justify-content: center;
   text-align: center;
   padding: 5% 20%;
@@ -305,9 +320,15 @@ table {
 
 /* Resume Page */
 
+.resume-page {
+  background: #181f2c;
+  background: #1d2326;
+  background: #22292c; 
+}
+
 .resume-container {
   display: flex;
-  margin: 2%;
+  margin: 3%;
   /* flex-wrap: wrap; */
   /* max-width: 600; */
   /* height: 1200; */
@@ -495,6 +516,45 @@ hr.thick {
 
 .schools .school-year {
   color: darkgray;
+}
+
+/* About Me Component */
+
+.about-me-content-container {
+  display: flex;
+  margin: 5% 15%;
+}
+
+.about-me-content-container .left {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-content-container .left img {
+  align-self: center;
+  padding-bottom: 10%;
+}
+
+.about-me-content-container h1 {
+  font-size: 300%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 1%;
+}
+
+.about-me-content-container h2 {
+  font-size: 220%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 5%;
+}
+
+.about-me-content-container p {
+  font-size: 120%;
+  line-height: 1.4;
+  text-align: justify;
+  /* text-justify: inter-word; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 2%;
 }
 
 /* Fonts */

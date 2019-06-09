@@ -16,9 +16,6 @@ const Footer = () => {
           <a href="https://vimeo.com/austinhowes/" target="blank"><FontAwesomeIcon icon={['fab', 'vimeo']} /> </a>
         </div>
       </nav>
-      <a href="https://www.LambdaSchool.com" target="blank">
-        <img src={ require('../../Images/Logos/Logo_Lambda.png') } alt='Lambda Logo Grayscale' />
-      </a>
     </footer>
   )
 }

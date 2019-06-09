@@ -292,12 +292,17 @@ class ResumeComponent extends Component {
               <hr className="thick"></hr>
             </div>
             <div className="schools">
-
+              <a href="https://www.LambdaSchool.com" target="blank">
+                <img src={ require('../../Images/Logos/Logo_Lambda.png') } alt='Lambda Logo Grayscale' />
+              </a>
               <div className="lambda">
                 <p className="school">Lambda School</p>
                 <p className="school-year">CS 2018</p>
               </div>
 
+              <a href="https://www.LambdaSchool.com" target="blank">
+                <img src={ require('../../Images/Logos/Logo_AAU.png') } alt='Lambda Logo Grayscale' />
+              </a>
               <div className="aau">
                 <p className="school">Academy of Art University</p>
                 <p className="school-year">BFA 2011</p>

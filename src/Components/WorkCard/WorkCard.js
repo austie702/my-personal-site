@@ -39,7 +39,7 @@ class WorkCard extends Component {
         </h3>
         <img 
           className="thumbnail"
-          src={ require('../../Images/300x200.png') } 
+          src={this.props.imageThumb} 
           alt="placeholder"
         />
         <p className="work-card-desc">{this.props.desc}</p>
