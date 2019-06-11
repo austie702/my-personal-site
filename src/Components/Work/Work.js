@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkCard from '../WorkCard/WorkCard.js';
 import DevThumb_TBIF from '../../Images/DevThumbnails/DevThumb_BibleInFive.jpg';
+import PlaceHolder from '../../Images/300x200.png';
 
 const devWork = [
   {
@@ -20,7 +21,8 @@ const devWork = [
     desc: 'Beerthoven Concert Series is a nonprofit classical music concert series for all ages. Dress how you want, clap when you want, and come enjoy a beer, on us!',
     url: 'www.Beerthoven.com',
     path: 'Beerthoven',
-    techStack: ['JS', 'React', 'Node']
+    techStack: ['JS', 'React', 'Node'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'd2',
@@ -29,7 +31,8 @@ const devWork = [
     desc: 'Craft is an adult group piano class held in laid back environments like breweries, bars, & coffee shops.',
     url: 'www.CraftMusicLessons.com',
     path: 'CraftMusicLessons',
-    techStack: ['JS', 'React']
+    techStack: ['JS', 'React'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'd3',
@@ -38,7 +41,8 @@ const devWork = [
     desc: 'TuneKit is a platform to empower people to create venues in their own homes.',
     url: 'www.TuneKit.com',
     path: 'TuneKit',
-    techStack: ['JS', 'React', 'Node', 'ChartJS']
+    techStack: ['JS', 'React', 'Node', 'ChartJS'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'd4',
@@ -47,7 +51,8 @@ const devWork = [
     desc: 'This app is a living document for all things Beerthoven concert data. Designed for the staff to access all data in a single customized dashboard.',
     url: 'www.Beerthoven.com/datadash',
     path: 'BeerthovenDataDash',
-    techStack: ['JS', 'React', 'Node', 'Python', 'Django']
+    techStack: ['JS', 'React', 'Node', 'Python', 'Django'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'd5',
@@ -56,7 +61,8 @@ const devWork = [
     desc: "Well, you're already here, but I may as well add it to the list. Go ahead and click on it! You should head over there/here and take a look.",
     url: 'www.AustinHowes.com',
     path: 'AustinHowes',
-    techStack: ['JS', 'React', 'Node']
+    techStack: ['JS', 'React', 'Node'],
+    imageThumb: PlaceHolder
   }
 ]
 
@@ -68,7 +74,8 @@ const artWork = [
     desc: 'This is a highlight reel of my work ranging from traditional to scan-data modeling.',
     url: 'https://vimeo.com/154961183',
     path: '154961183',
-    techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Lidar']
+    techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Lidar'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'a1',
@@ -77,7 +84,8 @@ const artWork = [
     desc: 'This project sought to model complex hard surface geometry without faking any of the modeling detail with textures.',
     url: 'https://vimeo.com/97918154',
     path: '97918154',
-    techStack: ['Modo']
+    techStack: ['Modo'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'a2',
@@ -86,7 +94,8 @@ const artWork = [
     desc: 'This was a project aiming for photorealism requiring minimal modeling time.',
     url: 'https://vimeo.com/135458192',
     path: '135458192',
-    techStack: ['Modo', 'PhotoScan', 'Sony_a99']
+    techStack: ['Modo', 'PhotoScan', 'Sony_a99'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'a3',
@@ -95,7 +104,8 @@ const artWork = [
     desc: 'Photogrammetry project to capture granular details in seemingly flat surfaces.',
     url: 'https://vimeo.com/124166261',
     path: '124166261',
-    techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Maya']
+    techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Maya'],
+    imageThumb: PlaceHolder
   },
   {
     id: 'a4',
@@ -104,7 +114,8 @@ const artWork = [
     desc: 'Photogrammetry asset designed for realistic road/sidewalk texture library.',
     url: 'https://vimeo.com/116153733',
     path: '116153733',
-    techStack: ['Modo', 'PhotoScan', 'Sony_a99']
+    techStack: ['Modo', 'PhotoScan', 'Sony_a99'],
+    imageThumb: PlaceHolder
   }
 ]
 
