@@ -253,6 +253,29 @@ table {
   padding-top: 3em;
 }
 
+.banner nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.banner nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner-small nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 200%;
+  width: 50%;
+  border: 1px solid red;
+}
+
+.banner-small nav a {
+  text-decoration: none;
+  color: white;
+}
+
 .work-card-array {
   display: flex;
   flex-wrap: wrap;
@@ -538,12 +561,16 @@ hr.thick {
 
 .about-me-content-container h1 {
   font-size: 300%;
+  text-align: justify;
+  text-justify: inter-word;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 1%;
 }
 
 .about-me-content-container h2 {
   font-size: 220%;
+  text-align: justify;
+  text-justify: inter-word;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 5%;
 }

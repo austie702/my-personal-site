@@ -1,7 +1,17 @@
 import React from 'react';
 import WorkCard from '../WorkCard/WorkCard.js';
+// import PlaceHolder from '../../Images/300x200.png';
 import DevThumb_TBIF from '../../Images/DevThumbnails/DevThumb_BibleInFive.jpg';
-import PlaceHolder from '../../Images/300x200.png';
+import DevThumb_Beerthoven from '../../Images/DevThumbnails/DevThumb_Beerthoven.jpg';
+import DevThumb_CraftMusicLessons from '../../Images/DevThumbnails/DevThumb_CraftMusicLessons.jpg';
+import DevThumb_TuneKit from '../../Images/DevThumbnails/DevThumb_TuneKit.jpg';
+import DevThumb_Calculator from '../../Images/DevThumbnails/DevThumb_Calculator.jpg';
+import DevThumb_AustinHowes from '../../Images/DevThumbnails/DevThumb_AustinHowes.jpg';
+import ArtThumb_ManholeCover from '../../Images/ArtThumbnails/ArtThumb_ManholeCover.jpg';
+import ArtThumb_StonekWall from '../../Images/ArtThumbnails/ArtThumb_StonekWall.jpg';
+import ArtThumb_AR15 from '../../Images/ArtThumbnails/ArtThumb_AR15.jpg';
+import ArtThumb_TreeTrunk from '../../Images/ArtThumbnails/ArtThumb_TreeTrunk.jpg';
+import ArtThumb_DemoReel from '../../Images/ArtThumbnails/ArtThumb_DemoReel.jpg';
 
 const devWork = [
   {
@@ -10,7 +20,7 @@ const devWork = [
     title: 'The Bible in Five',
     desc: 'The Bible In Five is a scaleable way to read the Bible in context at all times. This app seeks to do away with the lack of understanding in the church.',
     url: 'www.BibleInFive.com',
-    path: 'BibleInFive',
+    path: '/dev/bible-in-five',
     techStack: ['React', 'Node', 'Go'],
     imageThumb: DevThumb_TBIF
   },
@@ -22,7 +32,7 @@ const devWork = [
     url: 'www.Beerthoven.com',
     path: 'Beerthoven',
     techStack: ['JS', 'React', 'Node'],
-    imageThumb: PlaceHolder
+    imageThumb: DevThumb_Beerthoven
   },
   {
     id: 'd2',
@@ -32,7 +42,7 @@ const devWork = [
     url: 'www.CraftMusicLessons.com',
     path: 'CraftMusicLessons',
     techStack: ['JS', 'React'],
-    imageThumb: PlaceHolder
+    imageThumb: DevThumb_CraftMusicLessons
   },
   {
     id: 'd3',
@@ -42,27 +52,27 @@ const devWork = [
     url: 'www.TuneKit.com',
     path: 'TuneKit',
     techStack: ['JS', 'React', 'Node', 'ChartJS'],
-    imageThumb: PlaceHolder
+    imageThumb: DevThumb_TuneKit
   },
   {
     id: 'd4',
     type: 'dev',
-    title: 'Beerthoven Data App',
-    desc: 'This app is a living document for all things Beerthoven concert data. Designed for the staff to access all data in a single customized dashboard.',
-    url: 'www.Beerthoven.com/datadash',
+    title: 'Calculator',
+    desc: 'A project from my first days of React, learning how to build minimal components and pass the necessary props to replicate the classic machine.',
+    url: 'www.austinhowes.com/calculator',
     path: 'BeerthovenDataDash',
-    techStack: ['JS', 'React', 'Node', 'Python', 'Django'],
-    imageThumb: PlaceHolder
+    techStack: ['JS', 'React', 'Node'],
+    imageThumb: DevThumb_Calculator
   },
   {
     id: 'd5',
     type: 'dev',
     title: 'My Personal Website',
-    desc: "Well, you're already here, but I may as well add it to the list. Go ahead and click on it! You should head over there/here and take a look.",
+    desc: "Well, you're already here, but I may as well add it to the list. Go ahead and click on it! You can head over there/here and take a(nother) look.",
     url: 'www.AustinHowes.com',
     path: 'AustinHowes',
     techStack: ['JS', 'React', 'Node'],
-    imageThumb: PlaceHolder
+    imageThumb: DevThumb_AustinHowes
   }
 ]
 
@@ -75,7 +85,7 @@ const artWork = [
     url: 'https://vimeo.com/154961183',
     path: '154961183',
     techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Lidar'],
-    imageThumb: PlaceHolder
+    imageThumb: ArtThumb_DemoReel
   },
   {
     id: 'a1',
@@ -85,7 +95,7 @@ const artWork = [
     url: 'https://vimeo.com/97918154',
     path: '97918154',
     techStack: ['Modo'],
-    imageThumb: PlaceHolder
+    imageThumb: ArtThumb_AR15
   },
   {
     id: 'a2',
@@ -95,17 +105,17 @@ const artWork = [
     url: 'https://vimeo.com/135458192',
     path: '135458192',
     techStack: ['Modo', 'PhotoScan', 'Sony_a99'],
-    imageThumb: PlaceHolder
+    imageThumb: ArtThumb_StonekWall
   },
   {
     id: 'a3',
     type: 'art',
-    title: 'Brick Pillar Corner',
-    desc: 'Photogrammetry project to capture granular details in seemingly flat surfaces.',
-    url: 'https://vimeo.com/124166261',
+    title: 'Tree Trunk',
+    desc: 'Photogrammetry project to test capture of multiple deep crevices in a target.',
+    url: 'https://vimeo.com/118117782',
     path: '124166261',
     techStack: ['Modo', 'PhotoScan', 'Sony_a99', 'Maya'],
-    imageThumb: PlaceHolder
+    imageThumb: ArtThumb_TreeTrunk
   },
   {
     id: 'a4',
@@ -115,7 +125,7 @@ const artWork = [
     url: 'https://vimeo.com/116153733',
     path: '116153733',
     techStack: ['Modo', 'PhotoScan', 'Sony_a99'],
-    imageThumb: PlaceHolder
+    imageThumb: ArtThumb_ManholeCover
   }
 ]
 

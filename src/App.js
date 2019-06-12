@@ -3,7 +3,6 @@ import { Route } from 'react-router-dom';
 import Home from './Pages/Home.js';
 import Resume from './Pages/Resume.js';
 import About from './Pages/About.js';
-import Contact from './Pages/Contact.js';
 import BibleInFive from './Pages/BibleInFive';
 
 const App = () => (
@@ -11,8 +10,7 @@ const App = () => (
     <Route exact path='/' component={Home} />
     <Route path='/resume' component={Resume} />
     <Route path='/about' component={About} />
-    <Route path='/contact' component={Contact} />
-    <Route path='/portfolio/BibleInFive' component={BibleInFive} />
+    <Route path='/portfolio/dev/bible-in-five' component={BibleInFive} />
   </div>
 );
 

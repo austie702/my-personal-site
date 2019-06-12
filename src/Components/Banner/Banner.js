@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavPages from '../Nav/NavPages';
 import '../../Images/profilePic.png';
 import '../../Images/atxbw.jpg';
 
@@ -11,6 +12,8 @@ class Banner extends Component {
           <div className="austin-from-austin">
             <h1>Austin from Austin</h1>
           </div>
+
+          <NavPages />
 
           {/* <div className="profile-pic">
             <img src={ require('../../Images/profilePic.png') } alt="Austin getting punched." />
