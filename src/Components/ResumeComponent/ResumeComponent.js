@@ -32,7 +32,7 @@ class ResumeComponent extends Component {
               <div className="icon">
                 <FontAwesomeIcon icon={faUserAlt} />
               </div>
-              <a href="https://www.austinhowes.com" target="blank" className="contact-info">Personal Website</a>
+              <a href="www.austinhowes.com" target="blank" className="contact-info">Personal Website</a>
             </div>
             <div className="icon-link">
               <div className="icon">
