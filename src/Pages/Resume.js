@@ -1,12 +1,12 @@
 import React from 'react';
 import ResumeComponent from '../Components/ResumeComponent/ResumeComponent.js';
 import Footer from '../Components/Footer/Footer.js';
-import BannerSmall from '../Components/BannerSmall/BannerSmall.js';
+import Banner from '../Components/Banner/Banner.js';
 
 const Resume = () => {
   return (
     <div className="resume-page">
-      <BannerSmall />
+      <Banner />
       <ResumeComponent />
       <Footer />
     </div>

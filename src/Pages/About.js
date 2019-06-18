@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../Components/Footer/Footer.js';
-import BannerSmall from '../Components/BannerSmall/BannerSmall.js';
+import Banner from '../Components/Banner/Banner.js';
 import AboutMeComponent from '../Components/AboutMeComponent/AboutMeComponent.js';
 
 const About = () => {
   return (
     <div>
-      <BannerSmall />
+      <Banner />
       <AboutMeComponent />
       <Footer />
     </div>

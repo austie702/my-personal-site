@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import NavPages from '../Nav/NavPages';
+import { Link } from 'react-router-dom';
+// import NavPages from '../Nav/NavPages';
 import '../../Images/profilePic.png';
 import '../../Images/atxbw.jpg';
 
@@ -10,10 +11,10 @@ class Banner extends Component {
 
         <div className="header-elements">
           <div className="austin-from-austin">
-            <h1>Austin from Austin</h1>
+          <Link to='/'>Austin from Austin</Link>
           </div>
 
-          <NavPages />
+          {/* <NavPages /> */}
 
           {/* <div className="profile-pic">
             <img src={ require('../../Images/profilePic.png') } alt="Austin getting punched." />

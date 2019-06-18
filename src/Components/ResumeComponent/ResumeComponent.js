@@ -146,7 +146,7 @@ class ResumeComponent extends Component {
                   <h3 className="project-or-company-title">Beerthoven Concert Series Data</h3>
                   <p className="date">2018 - Current</p>
                 </div>
-                <p className="p-desc">A toolkit for logging, tracking, and visualizing data in a seemingly in􀃕nite number of con􀃕gurations.</p>
+                <p className="p-desc">A toolkit for logging, tracking, and visualizing data in a seemingly infinite number of configurations.</p>
               </div>
 
               <div className="project">
@@ -185,7 +185,7 @@ class ResumeComponent extends Component {
               <ul>
                 <li>Primarily worked with React to add new pages and features to Tackle's existing website.</li>
                 <li>Absorbed as much as possible about the way the Amazon Marketplace functions on the enterprise level to inform my production on the product.</li>
-                <li>Navigated the backend API Python code base to 􀃕nd endpoints to work with my frontend code.</li>
+                <li>Navigated the backend API Python code base to find endpoints to work with my frontend code.</li>
                 <li>Authored UI/UX mockups and created documentation for pages I was responsible for.</li>
               </ul>
             </div>
@@ -202,7 +202,7 @@ class ResumeComponent extends Component {
               <ul>
                 <li>Implemented new features in both front and back end for the admin-facing version of the site.</li>
                 <li>Removed list of bugs provided by CSA as well as those I found along the way.</li>
-                <li>Deployed server instance for non-destructive work􀃖ow during testing phase.</li>
+                <li>Deployed server instance for non-destructive workflow during testing phase.</li>
               </ul>
             </div>
 
@@ -233,8 +233,8 @@ class ResumeComponent extends Component {
               <ul>
                 <li>Attendance increased by 400%.</li>
                 <li>Cut costs by 20% through B2B partnerships I formed, sponsorship, and using data to make informed decisions.</li>
-                <li>Turned a pro􀃕t on their 􀃕rst of many shows, freeing up their 􀃕nances to do more community outreach expansion.</li>
-                <li>Creating data visualizations from past data to refocus our resources to increase pro􀃕ts and attendance as well as more accurately aim our outreach.</li>
+                <li>Turned a profit on their first of many shows, freeing up their finances to do more community outreach expansion.</li>
+                <li>Creating data visualizations from past data to refocus our resources to increase profits and attendance as well as more accurately aim our outreach.</li>
               </ul>
             </div>
 
@@ -248,7 +248,7 @@ class ResumeComponent extends Component {
                 <p className="location">Austin, TX</p>
               </div>
               <ul>
-                <li>After initially structuring the company, my main role was asset creation. I provided 3D scans or authored 3D models for projects in architecture, engineering, construction, 􀃕lm, and gaming. Birdhouse produced sub-millimeter accurate recreations of various sites and objects using both laser-based and photogrammetry-based scanning methods.</li>
+                <li>After initially structuring the company, my main role was asset creation. I provided 3D scans or authored 3D models for projects in architecture, engineering, construction, film, and gaming. Birdhouse produced sub-millimeter accurate recreations of various sites and objects using both laser-based and photogrammetry-based scanning methods.</li>
               </ul>
             </div>
 
@@ -276,10 +276,10 @@ class ResumeComponent extends Component {
                 <p className="location">Bellevue, WA</p>
               </div>
               <ul>
-                <li>Initially hired to help a problem that was behind schedule, I 􀃕nished my work in 9 months (14 month deadline).</li>
+                <li>Initially hired to help a problem that was behind schedule, I finished my work in 9 months (14 month deadline).</li>
                 <li>Authored 80%+ of the game's physics assets.</li>
                 <li>Set the quality benchmark for distant-LOD rendering, balancing quality and performance.</li>
-                <li>Seamlessly discovered and repaired hundreds of errors from other departments by integrating information from meetings I proposed with each department, helping me produce this work􀃖ow from day one.</li>
+                <li>Seamlessly discovered and repaired hundreds of errors from other departments by integrating information from meetings I proposed with each department, helping me produce this workflow from day one.</li>
                 <li>Proposed and implemented a more performant company-wide restructuring of our organizational tools.</li>
               </ul>
             </div>

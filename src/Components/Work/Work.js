@@ -19,7 +19,7 @@ const devWork = [
     type: 'dev',
     title: 'The Bible in Five',
     desc: 'The Bible In Five is a scaleable way to read the Bible in context at all times. This app seeks to do away with the lack of understanding in the church.',
-    url: 'www.BibleInFive.com',
+    url: 'https://www.BibleInFive.com',
     path: '/dev/bible-in-five',
     techStack: ['React', 'Node', 'Go'],
     imageThumb: DevThumb_TBIF
@@ -29,7 +29,7 @@ const devWork = [
     type: 'dev',
     title: 'Beerthoven',
     desc: 'Beerthoven Concert Series is a nonprofit classical music concert series for all ages. Dress how you want, clap when you want, and come enjoy a beer, on us!',
-    url: 'www.Beerthoven.com',
+    url: 'https://www.Beerthoven.com',
     path: 'Beerthoven',
     techStack: ['JS', 'React', 'Node'],
     imageThumb: DevThumb_Beerthoven
@@ -39,7 +39,7 @@ const devWork = [
     type: 'dev',
     title: 'Craft Music Lessons',
     desc: 'Craft is an adult group piano class held in laid back environments like breweries, bars, & coffee shops.',
-    url: 'www.CraftMusicLessons.com',
+    url: 'https://www.CraftMusicLessons.com',
     path: 'CraftMusicLessons',
     techStack: ['JS', 'React'],
     imageThumb: DevThumb_CraftMusicLessons
@@ -49,7 +49,7 @@ const devWork = [
     type: 'dev',
     title: 'TuneKit',
     desc: 'TuneKit is a platform to empower people to create venues in their own homes.',
-    url: 'www.TuneKit.com',
+    url: 'https://www.TuneKit.com',
     path: 'TuneKit',
     techStack: ['JS', 'React', 'Node', 'ChartJS'],
     imageThumb: DevThumb_TuneKit
@@ -58,9 +58,9 @@ const devWork = [
     id: 'd4',
     type: 'dev',
     title: 'Calculator',
-    desc: 'A project from my first days of React, learning how to build minimal components and pass the necessary props to replicate the classic machine.',
-    url: 'www.austinhowes.com/calculator',
-    path: 'BeerthovenDataDash',
+    desc: 'A project from my first days of React, learning how to build this classic project using minimal components and pass the necessary props to replicate the classic machine.',
+    url: '/portfolio/dev/calculator',
+    path: 'Calculator',
     techStack: ['JS', 'React', 'Node'],
     imageThumb: DevThumb_Calculator
   },
@@ -132,19 +132,20 @@ const artWork = [
 const Work = (props) => {
   return (
     <div>
-
+      
       {props.showDev && <section className='work-card-array'>
         {devWork.map((piece) => {
           return <WorkCard 
-            key={piece.id} 
-            title={piece.title} 
-            desc={piece.desc} 
-            url={piece.url}
-            path={piece.path} 
-            techStack={piece.techStack} 
-            imageThumb={piece.imageThumb}
+          key={piece.id} 
+          title={piece.title} 
+          desc={piece.desc} 
+          url={piece.url}
+          path={piece.path} 
+          techStack={piece.techStack} 
+          imageThumb={piece.imageThumb}
           />
-      })}
+        })}
+        <p>This section is under construction. Please forgive the broken links to nowhere and missing projects.</p>
       </section>}
 
       {props.showArt && <section className='work-card-array'>
@@ -159,6 +160,7 @@ const Work = (props) => {
             imageThumb={piece.imageThumb}
           />
       })}
+      <p>This section is under construction. Please forgive the broken links to nowhere and missing projects.</p>
       </section>}
 
     </div>

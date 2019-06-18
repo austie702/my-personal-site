@@ -61,12 +61,12 @@ table {
 }
 
 .banner {
-  color: white;
+  color: whitesmoke;
   width: 100%;
-  min-height: 600px;
-  max-height: 700px;
-  padding: 5% 15%;
-  background-image: url('./Images/atxbw.jpg');
+  /* min-height: 600px; */
+  height: 450px;
+  padding: 3% 5%;
+  background-image: url('./Images/atxbwSmall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -87,7 +87,7 @@ table {
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
-  height: 500px;
+  height: 20px;
 }
 
 .austin-from-austin {
@@ -95,7 +95,7 @@ table {
 }
 
 .austin-from-austin a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -107,6 +107,8 @@ table {
 .problem-solving {
   /* margin-top: 20%; */
   font-size: 1em;
+  padding-left: 2em;
+  padding-top: 0.5em;
 }
 
 .rw-wrapper{
@@ -186,9 +188,10 @@ table {
   display: flex;
   flex-direction: column;
   padding: 0% 20%;
-  color: white;
+  color: black;
   text-align: center;
-  background-color: #bb1333;
+  /* background-color: #bb1333; */
+  background-color: #7590a7;
 }
 
 .i-am-section-title {
@@ -208,14 +211,15 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
   width: 35%;
+  max-height: 70%;
   padding: 1em;
   border-radius: .5em;
-  box-shadow: 5px 5px 15px 5px #a7112d;
+  /* box-shadow: 5px 5px 15px 5px #a7112d; */
+  box-shadow: 5px 5px 15px 5px #6b8499;
 }
 
 .i-am-a:hover {
-  text-shadow: 1px 1px #1d2326;
-  box-shadow: 1px 1px #1d2326;
+  box-shadow: 2px 2px 6px 6px #6b8499;
 }
 
 .i-am-a h2 {
@@ -223,7 +227,8 @@ table {
 }
 
 .i-am-a p {
-  font-size: 1.05em;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .i-am-line {
@@ -268,7 +273,6 @@ table {
   justify-content: space-evenly;
   font-size: 200%;
   width: 50%;
-  border: 1px solid red;
 }
 
 .banner-small nav a {
@@ -294,6 +298,10 @@ table {
   margin: 3%;
   box-sizing: border-box;
   box-shadow: 5px 5px 15px 5px rgb(24, 24, 24);
+}
+
+.work-card:hover {
+  box-shadow: 2px 2px 5px 5px rgb(32, 32, 32);
 }
 
 .work-card .title {

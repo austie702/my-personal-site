@@ -35,7 +35,8 @@ class WorkCard extends Component {
     return (
       <div className="work-card">
         <h3 className="title">
-          <Link to={`/portfolio/${this.props.path}`}>{this.props.title}</Link>
+          {/* <Link to={`/portfolio/${this.props.path}`}>{this.props.title}</Link> */}
+          {this.props.title}
         </h3>
         <img 
           className="thumbnail"
