@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import LogoReact from '../../Images/Logos/Logo_React.png';
 import LogoJavaScript from '../../Images/Logos/Logo_JavaScript.png';
@@ -46,7 +46,7 @@ class WorkCard extends Component {
         <p className="work-card-desc">{this.props.desc}</p>
         <div className="work-card-bottom">
           <div className="visit-site">
-            <a href={this.props.url}>Visit Site</a>
+            <a href={this.props.url} target='blank'>Visit Site</a>
           </div>
           <div className="tech-stack">
             {this.props.techStack.map(tech => (

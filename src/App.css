@@ -63,20 +63,9 @@ table {
 .banner {
   color: whitesmoke;
   width: 100%;
-  /* min-height: 600px; */
   height: 450px;
+  max-height: 600px;
   padding: 3% 5%;
-  background-image: url('./Images/atxbwSmall.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner-small {
-  color: white;
-  width: 100%;
-  min-height: 500px;
-  /* max-height: 700px; */
-  padding: 5% 15%;
   background-image: url('./Images/atxbwSmall.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,15 +94,12 @@ table {
 } */
 
 .problem-solving {
-  /* margin-top: 20%; */
   font-size: 1em;
   padding-left: 2em;
   padding-top: 0.5em;
 }
 
 .rw-wrapper{
-  /* display: flex; */
-  /* justify-content: center; */
   text-align: center;
 	position: relative;
 }
@@ -139,8 +125,8 @@ table {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	width: 100%;
-	color: whitesmoke;
+  max-width: 400px;
+  color: whitesmoke;
 }
 
 .rw-words-2 span{
@@ -190,8 +176,8 @@ table {
   padding: 0% 20%;
   color: black;
   text-align: center;
-  /* background-color: #bb1333; */
   background-color: #7590a7;
+  /* background-color: #bb1333; */
 }
 
 .i-am-section-title {
@@ -282,11 +268,12 @@ table {
 
 .work-card-array {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #22292c;
   padding: 0% 10%;
-  color: rgb(194, 194, 194);;
+  color: rgb(194, 194, 194);
 }
 
 .work-card {
@@ -300,9 +287,9 @@ table {
   box-shadow: 5px 5px 15px 5px rgb(24, 24, 24);
 }
 
-.work-card:hover {
+/* .work-card:hover {
   box-shadow: 2px 2px 5px 5px rgb(32, 32, 32);
-}
+} */
 
 .work-card .title {
   font-size: 1.75em;
