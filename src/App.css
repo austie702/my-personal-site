@@ -176,7 +176,7 @@ table {
   padding: 0% 20%;
   color: black;
   text-align: center;
-  background-color: #7590a7;
+  /* background-color: #7590a7; */
   /* background-color: #bb1333; */
 }
 
@@ -201,7 +201,7 @@ table {
   padding: 1em;
   border-radius: .5em;
   /* box-shadow: 5px 5px 15px 5px #a7112d; */
-  box-shadow: 5px 5px 15px 5px #6b8499;
+  box-shadow: 5px 5px 15px 5px #c9c9c9;
 }
 
 .i-am-a:hover {
