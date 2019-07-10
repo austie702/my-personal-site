@@ -15,7 +15,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      showDev: false,
+      showDev: true,
       showArt: false
     }
     
